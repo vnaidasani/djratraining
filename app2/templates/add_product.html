@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Add Product</title>
+    </head>
+
+    <body>
+        <h1>Add Product</h1>
+        <form action="addprodname/" method="post">
+            {% csrf_token %}
+            Product Name:<br>
+            <input name="prodname">
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+        
+    </body>
+</html>

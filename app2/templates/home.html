@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Members</title>
+    </head>
+
+    <body>
+        <h1>Member List</h1>
+        <table border='1'>
+            {% for item in members %}
+            <tr>
+                <td><a href="update/{{item.id}}">{{item.id}}</a></td>
+                <td>{{item.first_name}}</td>
+                <td>{{item.last_name}}</td>
+                <td><a href="delete/{{item.id}}">Remove</a></td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>
+            <a href='add/'>Add Member</a>
+        </p>
+
+        
+        <h1>Category Name</h1>
+        <table border='1'>
+            {% for cat in categories %}
+            <tr>
+                <td>{{cat.name}}</td>
+            </tr>
+            {% endfor %}
+        <p>
+    
+            <a href='addcategory/'>Add Category</a>
+        </p>
+    </body>
+</html>

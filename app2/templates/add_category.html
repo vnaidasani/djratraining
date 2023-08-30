@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Add Category</title>
+    </head>
+
+    <body>
+        <h1>Add Category</h1>
+        <form action="addcatname/" method="post">
+            {% csrf_token %}
+            Category Name:<br>
+            <input name="catname">
+            <br><br>
+            <input type="submit" value="submit">
+        </form>
+        
+    </body>
+</html>
